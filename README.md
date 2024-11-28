@@ -8,4 +8,4 @@ Funcionalidades principales:
 
 
 
-Se requiere un servidor local , en este caso se uso  XAMPP para apache y MYSQL, se debe importar la base de datos
+Se requiere un servidor local , en este caso se uso  XAMPP para apache y MYSQL, se debe importar la base de datos login_register.sql
