@@ -1,0 +1,162 @@
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+:root {
+    /* Colors */
+    --blanco: #fff;
+    --negro: #000;
+    --neutral-c: #f5f5f5;
+    --gris-oscuro: #8c8c8c;
+    --grafito: #222;
+    --rojo: #b81515;
+    --otro: #b3aeb4; 
+    --otro1: #1276b4;
+}
+
+.centro{
+    position: absolute;
+    top: 62%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 80;
+    padding: 30px;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.8) ; /* Fondo semitransparente */
+    box-shadow: 10px 4px 0px rgba(0, 0, 0, 0.9);
+    width: 820px; 
+    text-align: center;
+    border:#000000;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.encabezado__container {    
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin: 0%;
+
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 ;
+    height: 60px;
+}
+
+.encabezado__logo--icono {
+    max-width: 480px;
+}
+
+
+.encabezado__navegacion--lista {
+    display: flex;
+    color: white;
+    gap: 40px;
+    list-style-type: none;
+}
+
+
+
+.encabezado__navegacion--elemento a {
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0%;
+
+}
+
+
+.footer__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin-top: -4px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 260px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.footer__social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+button {
+    background: linear-gradient(135deg, #42a5f5, #478ed1); /* Degradado de color */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-family: 'Montserrat', sans-serif; /* Fuente del botón */
+    cursor: pointer; /* Cambia el cursor a "pointer" */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de agrandamiento al pasar el mouse */
+button:hover {
+    transform: scale(1.05); /* Crece un 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+    background: linear-gradient(135deg, #478ed1, #42a5f5); /* Inversión de colores en el degradado */
+}
+
+/* Estilo adicional para efectos visuales */
+button:active {
+    transform: scale(1); /* Vuelve a su tamaño original al hacer clic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce la sombra al hacer clic */
+    background: linear-gradient(135deg, #42a5f5, #3591d6); /* Cambio ligero de color */
+}
+
